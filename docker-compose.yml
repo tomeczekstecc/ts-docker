@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+    api:
+        build: # albo image jeśli nie buduję na serwerze
+            context: .
+            target: production
+        ports:
+            - 4000:4000
